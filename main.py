@@ -27,7 +27,7 @@ f.close()
 #开始输出
 weeklist=["星期一","星期二","星期三","星期四","星期五","星期六","星期天"]
 weekday=datetime.date.today().weekday()
-content=time.strftime("白桦林摸鱼办提醒您\n今天是%Y年%m月%d日"+weeklist[weekday]+"\n上午好，摸鱼人！\n工作再累，一定不要忘记摸鱼哦，有事没事起身去茶水间，去厕所，去廊道走走别老在工位上坐着，钱是老板的,但命是自己的。\n========", time.localtime())
+content=time.strftime("xxx摸鱼办提醒您\n今天是%Y年%m月%d日"+weeklist[weekday]+"\n上午好，摸鱼人！\n工作再累，一定不要忘记摸鱼哦，有事没事起身去茶水间，去厕所，去廊道走走别老在工位上坐着，钱是老板的,但命是自己的。\n========", time.localtime())
 content = content+"\n今天是"+weeklist[weekday]+"\n"+weekdaysayinglist[weekday][random.randint(0,int(len(weekdaysayinglist[weekday]))-1)]+"\n========\n下面是节日倒计时~~~\n"
 for datess in datesss:
     datess = datess.split(" ")
